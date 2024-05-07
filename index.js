@@ -50,36 +50,8 @@ function init() {
   fs.writeFile('README_Template/README_Template.md', generate_Markdown(data),(err) => err? console.error(err) : console.log("Success!"))})
 }
 
-// Function call to initialize app
+
 init();
 
-
-// // A function that writes a README file
-// function writeToFile(fileName, data) {
-//   fs.unlink("./README_Template.md", () => {
-//       fs.appendFile("./README_Template.md", generate_Markdown(data), (err) => {
-//           if (err) {
-//               console.log(err);
-//           } else {
-//               console.log("README_Template successfully generated.");
-//           }
-//       });
-//   });
-// }
-
-
-// // TODO: Create a function to initialize app
-// function init() {
-//     inquirer.prompt(questions).then((answers) => {
-//         writeToFile(answers);
-//     })
-//     .catch((err) => {
-//         if (err.isTtyError) {
-//             console.log("The prompts couldn't be rendered.");
-//         } else {
-//             console.log(err);
-//         }
-//     });
-// }
 
 
